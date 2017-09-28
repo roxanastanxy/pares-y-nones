@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.positivo, .negativo, .jugada, .evaluacion, .felicitacion{
+    display:none;
+}
+
+body{
+    background-color: lightgreen;
+}
+.container-fluid{
+    border: solid 2px black;
+    margin:100px;
+    border-radius: 7px;
+}
+
+.inicio{
+    background-color: bisque;
+    color:blue;
+    border:dotted 5px maroon;
+    margin-top:25px;
+    margin-left:100px;
+    margin-right:100px;
+}
+h2{
+    font-family: 'Wendy One', sans-serif;
+    color:crimson
+}
+.negativo{
+ font-family: 'Lobster Two', cursive;
+}
+img{
+    border:solid 5px red;
+    border-radius:50%;
+}
