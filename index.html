@@ -14,48 +14,93 @@
 
 	<body>
 <div class='container-fluid'>
-        <div class='inicio'>
-    <h1 class='text-center'><i class="fa fa-bolt" aria-hidden="true"></i>Bienvenid@ al juego de tu vida<i class="fa fa-bolt" aria-hidden="true"></i></h1>
+<!--    pantalla inicio juego-->
+        <div id='inicio'>
+    <h1 class='text-center'><i class="fa fa-bolt fa-2x" aria-hidden="true"></i>Bienvenid@ al juego de tu vida<i class="fa fa-bolt fa-2x" aria-hidden="true"></i></h1>
             <h2 class='text-center'>&gt;PARES Y NONES&lt;</h2>
-    <h2>¿Quieres jugar?<label class="radio-inline">
-  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> SI
-</label>
-<label class="radio-inline">
-  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> NO
-</label></h2>
+    <h2 class='text-center'>¿Quieres jugar?</h2>
+         <div id='sino'>    <button  type="button" id='si' class="btn btn-warning">SI</button>
+        <button type="button" id='no' class="btn btn-warning">NO</button></div>
             
     
         </div>
-   
-        <div class='negativo'>
-    <h3><img src="gato.gif">Vuelve mañana con mas animos!</h3>
+    <!-- aqui se acaba la pantalla inicio juego-->
+    
+   <!--pantalla negacion-->
+        <div id='negativo'>
+    <img id='gato' class='img-circle'src="gato.gif"><p>Cuanto lo siento... Vuelve mañana con más animos!</p>
     
     </div>
-    <div class='positivo'>
+    <!-- acaba pantalla negacion-->
+    
+    <!-- pantalla  escoger pares o nones-->
+    
+    <div id='positivo'>
     <h3>Bieeeeen....</h3>
         <h3>Empezamos</h3>
         <label class="radio-inline">
-  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Pares
+            
+  <input type="radio" name="paresynones" id="pares" value="pares" > Pares
 </label>
 <label class="radio-inline">
-  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Nones
-</label></div>
+  <input type="radio" name="paresynones" id="nones"  value="nones"> Nones
+</label>
+       <button id='jugador' type="button" class="btn btn-info">Siguente</button>
+     </div>
+    <!-- acaba pantalla escoger pares o nones-->
+    
+    <!-- pantalla escoger numero-->
+    
     <div class='jugada'>
     
-    <div class="form-group has-success">
-  <label class="control-label" for="inputSuccess1"><h3>Elige un numero de 1 a 10</h3></label>
-  <input type="number" max='10' min='0' class="form-control" id="inputSuccess1" aria-describedby="helpBlock2">
+    <div class="form-group has-success" id='numero'>
+  <label class="control-label" for="inputSuccess1"><h3>Elige un numero de 0 a 10</h3></label>
+  <input type="number" required max='10' min='0' class="form-control" id="numeroElegido" aria-describedby="helpBlock2" placeholder="Utiliza las flechas para escoger tu numero de 0 a 10" >
+        <button id='maquina' type="button" class="btn btn-info">Siguente</button>
 <!--  <span id="helpBlock2" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
 </div>
     
     </div>
-    <div class='evaluacion'></div>    
-       <div class='resultado'></div> 
+    <!--acaba escoger numero-->
+    
+    
+    <!-- pantalla turno maquina-->
+    <div id='evaluacion'>
+        <button onclick='disparar()' id='turnoMaquina' type="button" class="btn btn-info">Turno para maquina</button>
+        <br>
+    <div class='nube' ><div id='nube1'><img class='nube' src='nube.png'></div>
+    <div id='nube2'><img class='nube' src='nube.png'></div>
+    <div id='nube3'><img class='nube' src='nube.png'></div>
+    <div id='nube4'><img class='nube' src='nube.png'></div>
+    <div id='nube5'><img class='nube' src='nube.png'></div></div>
+    
+    
+    
+    </div>  
+    
+    <!-- acaba turno maquina-->
+    <!-- pantalla resultados-->
+       <div id='resultado'>
+           <div id='resultadoJ'></div>
+           <div id='resultadoM'></div>
+    
+    
         
+        <h2 id='ganador'><img src='graphics-fireworks-158568.gif'>Felicidades!Has gando!</h2>
+        <h2 id='perdedor'> Ohh!Lo siento, ha ganado la maquina.</h2>
+
+    </div> 
+        <!-- fin resultados-->
         </div>
         
+<!--        fin container-->
+        
+
+        <script type="text/javascript" src="script.js">
         
         
-        <script type="text/javascript" src="script.js"></script>
+        </script>
+<!--<script type="text/javascript" src="console.js"></script>-->
 	</body>
+        
 </html>

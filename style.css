@@ -3,35 +3,90 @@
     padding: 0;
 }
 
-.positivo, .negativo, .jugada, .evaluacion, .felicitacion{
+
+
+
+
+
+#positivo, #negativo, #jugada, #evaluacion, #felicitacion,#numero,#nube1,#nube2,#nube3,#nube4,#nube5, #resultado,#ganador,#perdedor{
     display:none;
 }
 
+
+
+
+
+
 body{
-    background-color: lightgreen;
+    background-image: url(maxresdefault.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow:hidden;
+    
+    
 }
 .container-fluid{
     border: solid 2px black;
-    margin:100px;
+    margin:10%;
     border-radius: 7px;
 }
 
-.inicio{
+#inicio{
     background-color: bisque;
     color:blue;
     border:dotted 5px maroon;
-    margin-top:25px;
-    margin-left:100px;
-    margin-right:100px;
+    margin:10%;
+    border-radius:7px;
 }
-h2{
+h2,label{
     font-family: 'Wendy One', sans-serif;
-    color:crimson
+    color:crimson;
 }
-.negativo{
+#sino{
+    text-align: center;
+}
+#negativo{
  font-family: 'Lobster Two', cursive;
+    color:blue;
+    text-shadow: 2px 2px 2px tan;
+  font-size: 28px;
+    font-weight: bold;
 }
-img{
+
+#gato{
     border:solid 5px red;
-    border-radius:50%;
+  
+}
+#evaluacion{
+    text-align: center;
+}
+.nube{
+    width:50%;
+    display: inline-flex;
+    
+   
+    
+}
+#nube1, #nube2, #nube3, #nube4,#nube5{
+    display: none;
+    
+   
+}
+#resultadoJ{
+    color:mediumvioletred;
+    text-align: center;
+    font-size: 25px;
+}
+#resultadoM{
+    color:mediumvioletred;
+    text-align: center;
+    font-size: 25px;
+}
+#ganador{
+    text-align: center;
+    
+}
+#perdedor{
+    text-align: center;
+    
 }
